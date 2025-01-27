@@ -1,0 +1,19 @@
+#!/usr/bin/env php
+<?php
+
+use Symfony\Component\Console\Application;
+use Zerotoprod\CliTools\SrcCommand;
+use Zerotoprod\OmdbApiCli\ByIdOrTitleCommand;
+use Zerotoprod\OmdbApiCli\PosterCommand;
+use Zerotoprod\OmdbApiCli\SearchCommand;
+
+require getcwd().'/vendor/autoload.php';
+
+$application = (new Application());
+
+$application->add(new SrcCommand());
+$application->add(new ByIdOrTitleCommand());
+$application->add(new SearchCommand());
+$application->add(new PosterCommand());
+
+$application->run();
