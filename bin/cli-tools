@@ -13,4 +13,7 @@ $Application->add(new Zerotoprod\OmdbApiCli\SearchCommand());
 $Application->add(new Zerotoprod\OmdbApiCli\PosterCommand());
 $Application->add(new Zerotoprod\OmdbApiCli\SrcCommand());
 
+$Application->add(new Zerotoprod\ValidateEmailCli\SrcCommand());
+$Application->add(new Zerotoprod\ValidateEmailCli\ValidateCommand());
+
 $Application->run();
