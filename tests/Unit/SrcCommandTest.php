@@ -6,7 +6,7 @@ use PHPUnit\Framework\Attributes\Test;
 use Symfony\Component\Console\Application;
 use Symfony\Component\Console\Tester\CommandTester;
 use Tests\TestCase;
-use Zerotoprod\:package_namespace\SrcCommand;
+use Zerotoprod\CliTools\SrcCommand;
 
 class SrcCommandTest extends TestCase
 {
@@ -15,7 +15,7 @@ class SrcCommandTest extends TestCase
         $application = new Application();
         $application->add(new SrcCommand());
 
-        $command = $application->find(':package_slug:src');
+        $command = $application->find('cli-tools:src');
         $commandTester = new CommandTester($command);
         $commandTester->execute([]);
 
