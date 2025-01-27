@@ -1,16 +1,16 @@
-# Zerotoprod\:package_namespace
+# Zerotoprod\CliTools
 
 ![](art/logo.png)
 
-[![Repo](https://img.shields.io/badge/github-gray?logo=github)](https://github.com/zero-to-prod/:package_slug)
-[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/zero-to-prod/:package_slug/test.yml?label=test)](https://github.com/zero-to-prod/:package_slug/actions)
-[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/zero-to-prod/:package_slug/build_docker_image.yml?label=build_docker_image)](https://github.com/zero-to-prod/:package_slug/actions)
-[![Packagist Downloads](https://img.shields.io/packagist/dt/zero-to-prod/:package_slug?color=blue)](https://packagist.org/packages/zero-to-prod/:package_slug/stats)
-[![php](https://img.shields.io/packagist/php-v/zero-to-prod/:package_slug.svg?color=purple)](https://packagist.org/packages/zero-to-prod/:package_slug/stats)
-[![Packagist Version](https://img.shields.io/packagist/v/zero-to-prod/:package_slug?color=f28d1a)](https://packagist.org/packages/zero-to-prod/:package_slug)
-[![License](https://img.shields.io/packagist/l/zero-to-prod/:package_slug?color=pink)](https://github.com/zero-to-prod/:package_slug/blob/main/LICENSE.md)
-[![wakatime](https://wakatime.com/badge/github/zero-to-prod/:package_slug.svg)](https://wakatime.com/badge/github/zero-to-prod/:package_slug)
-[![Hits-of-Code](https://hitsofcode.com/github/zero-to-prod/:package_slug?branch=main)](https://hitsofcode.com/github/zero-to-prod/:package_slug/view?branch=main)
+[![Repo](https://img.shields.io/badge/github-gray?logo=github)](https://github.com/zero-to-prod/cli-tools)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/zero-to-prod/cli-tools/test.yml?label=test)](https://github.com/zero-to-prod/cli-tools/actions)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/zero-to-prod/cli-tools/build_docker_image.yml?label=build_docker_image)](https://github.com/zero-to-prod/cli-tools/actions)
+[![Packagist Downloads](https://img.shields.io/packagist/dt/zero-to-prod/cli-tools?color=blue)](https://packagist.org/packages/zero-to-prod/cli-tools/stats)
+[![php](https://img.shields.io/packagist/php-v/zero-to-prod/cli-tools.svg?color=purple)](https://packagist.org/packages/zero-to-prod/cli-tools/stats)
+[![Packagist Version](https://img.shields.io/packagist/v/zero-to-prod/cli-tools?color=f28d1a)](https://packagist.org/packages/zero-to-prod/cli-tools)
+[![License](https://img.shields.io/packagist/l/zero-to-prod/cli-tools?color=pink)](https://github.com/zero-to-prod/cli-tools/blob/main/LICENSE.md)
+[![wakatime](https://wakatime.com/badge/github/zero-to-prod/cli-tools.svg)](https://wakatime.com/badge/github/zero-to-prod/cli-tools)
+[![Hits-of-Code](https://hitsofcode.com/github/zero-to-prod/cli-tools?branch=main)](https://hitsofcode.com/github/zero-to-prod/cli-tools/view?branch=main)
 
 ## Contents
 
@@ -31,10 +31,10 @@
 
 ## Installation
 
-Install `Zerotoprod\:package_namespace` via [Composer](https://getcomposer.org/):
+Install `Zerotoprod\CliTools` via [Composer](https://getcomposer.org/):
 
 ```bash
-composer require zero-to-prod/:package_slug
+composer require zero-to-prod/cli-tools
 ```
 
 This will add the package to your project’s dependencies and create an autoloader entry for it.
@@ -44,21 +44,21 @@ This will add the package to your project’s dependencies and create an autoloa
 Run this command to see the available commands:
 
 ```shell
-vendor/bin/:package_slug list
+vendor/bin/cli-tools list
 ```
 
 ## Docker Image
 
-You can also run the cli using the [docker image](https://hub.docker.com/repository/docker/davidsmith3/:package_slug/general):
+You can also run the cli using the [docker image](https://hub.docker.com/repository/docker/davidsmith3/cli-tools/general):
 
 ```shell
-docker run --rm davidsmith3/:package_slug
+docker run --rm davidsmith3/cli-tools
 ```
 
 ## Contributing
 
 Contributions, issues, and feature requests are welcome!
-Feel free to check the [issues](https://github.com/zero-to-prod/:package_slug/issues) page if you want to contribute.
+Feel free to check the [issues](https://github.com/zero-to-prod/cli-tools/issues) page if you want to contribute.
 
 1. Fork the repository.
 2. Create a new branch (`git checkout -b feature-branch`).
