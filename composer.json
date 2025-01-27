@@ -1,6 +1,6 @@
 {
   "name": "zero-to-prod/cli-tools",
-  "description": "cli-tools",
+  "description": "CLI tools",
   "license": "MIT",
   "type": "library",
   "keywords": [
