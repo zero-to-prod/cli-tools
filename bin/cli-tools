@@ -2,21 +2,15 @@
 <?php
 
 use Symfony\Component\Console\Application;
-use Zerotoprod\CliTools\SrcCommand;
-use Zerotoprod\OmdbApiCli\ByIdOrTitleCommand;
-use Zerotoprod\OmdbApiCli\PosterCommand;
-use Zerotoprod\OmdbApiCli\SearchCommand;
 
 require getcwd().'/vendor/autoload.php';
 
-$application = (new Application());
+$Application = (new Application());
+$Application->add(new Zerotoprod\CliTools\SrcCommand());
 
-$application->add(new SrcCommand());
+$Application->add(new Zerotoprod\OmdbApiCli\ByIdOrTitleCommand());
+$Application->add(new Zerotoprod\OmdbApiCli\SearchCommand());
+$Application->add(new Zerotoprod\OmdbApiCli\PosterCommand());
+$Application->add(new Zerotoprod\OmdbApiCli\SrcCommand());
 
-// OmdbApiCli
-$application->add(new ByIdOrTitleCommand());
-$application->add(new SearchCommand());
-$application->add(new PosterCommand());
-$application->add(new Zerotoprod\OmdbApiCli\SrcCommand());
-
-$application->run();
+$Application->run();
