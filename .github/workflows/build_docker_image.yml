@@ -17,10 +17,10 @@ jobs:
       - name: Login to DockerHub
         run: echo "${{ secrets.DOCKERHUB_PASSWORD }}" | docker login -u "davidsmith3" --password-stdin
 
-      - name: Set up QEMU
+      - name: docker/setup-qemu-action@v3
         uses: docker/setup-qemu-action@v3
 
-      - name: Set up Docker Buildx
+      - name: docker/setup-buildx-action@v3
         uses: docker/setup-buildx-action@v3
 
       - name: Build and Push
