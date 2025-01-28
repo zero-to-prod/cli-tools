@@ -8,12 +8,12 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
 #[AsCommand(
-    name: 'cli-tools:src',
+    name: SrcCommand::signature,
     description: 'Project source link'
 )]
 class SrcCommand extends Command
 {
-
+    public const signature = 'cli-tools:src';
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $output->writeLn('https://github.com/zero-to-prod/cli-tools');
