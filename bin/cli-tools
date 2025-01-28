@@ -4,6 +4,7 @@
 use Symfony\Component\Console\Application;
 use Zerotoprod\CliTools\CliTools;
 use Zerotoprod\OmdbApiCli\OmdbApiCli;
+use Zerotoprod\StreamSocketCli\StreamSocketCli;
 use Zerotoprod\ValidateEmailCli\ValidateEmailCli;
 use Zerotoprod\ValidateSemverCli\ValidateSemverCli;
 use Zerotoprod\ValidateUrlCli\ValidateUrlCli;
@@ -17,5 +18,6 @@ OmdbApiCli::register($Application);
 ValidateEmailCli::register($Application);
 ValidateUrlCli::register($Application);
 ValidateSemverCli::register($Application);
+StreamSocketCli::register($Application);
 
 $Application->run();
