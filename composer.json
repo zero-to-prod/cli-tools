@@ -36,7 +36,8 @@
     "ext-json": "*",
     "symfony/console": "^7.2",
     "zero-to-prod/omdb-api-cli": "^1.0",
-    "zero-to-prod/validate-email-cli": "^1.0"
+    "zero-to-prod/validate-email-cli": "^1.0",
+    "zero-to-prod/validate-url-cli": "^1.0"
   },
   "autoload": {
     "psr-4": {
