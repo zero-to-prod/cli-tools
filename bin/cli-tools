@@ -2,18 +2,16 @@
 <?php
 
 use Symfony\Component\Console\Application;
+use Zerotoprod\CliTools\CliTools;
+use Zerotoprod\OmdbApiCli\OmdbApiCli;
+use Zerotoprod\ValidateEmailCli\ValidateEmailCli;
 
 require getcwd().'/vendor/autoload.php';
 
 $Application = (new Application());
-$Application->add(new Zerotoprod\CliTools\SrcCommand());
 
-$Application->add(new Zerotoprod\OmdbApiCli\ByIdOrTitleCommand());
-$Application->add(new Zerotoprod\OmdbApiCli\SearchCommand());
-$Application->add(new Zerotoprod\OmdbApiCli\PosterCommand());
-$Application->add(new Zerotoprod\OmdbApiCli\SrcCommand());
-
-$Application->add(new Zerotoprod\ValidateEmailCli\SrcCommand());
-$Application->add(new Zerotoprod\ValidateEmailCli\ValidateCommand());
+CliTools::register($Application);
+OmdbApiCli::register($Application);
+ValidateEmailCli::register($Application);
 
 $Application->run();
