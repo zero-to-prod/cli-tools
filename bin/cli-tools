@@ -5,6 +5,7 @@ use Symfony\Component\Console\Application;
 use Zerotoprod\CliTools\CliTools;
 use Zerotoprod\OmdbApiCli\OmdbApiCli;
 use Zerotoprod\ValidateEmailCli\ValidateEmailCli;
+use Zerotoprod\ValidateUrlCli\ValidateUrlCli;
 
 require getcwd().'/vendor/autoload.php';
 
@@ -13,5 +14,6 @@ $Application = (new Application());
 CliTools::register($Application);
 OmdbApiCli::register($Application);
 ValidateEmailCli::register($Application);
+ValidateUrlCli::register($Application);
 
 $Application->run();
