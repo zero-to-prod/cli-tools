@@ -4,6 +4,7 @@
 use Symfony\Component\Console\Application;
 use Zerotoprod\CliTools\CliTools;
 use Zerotoprod\OmdbApiCli\OmdbApiCli;
+use Zerotoprod\Psr4ClassnameCli\Psr4ClassnameCli;
 use Zerotoprod\SslCertValidatorCli\SslCertValidatorCli;
 use Zerotoprod\StreamSocketCli\StreamSocketCli;
 use Zerotoprod\UrlCli\UrlCli;
@@ -17,6 +18,7 @@ $Application = (new Application());
 
 CliTools::register($Application);
 OmdbApiCli::register($Application);
+Psr4ClassnameCli::register($Application);
 SslCertValidatorCli::register($Application);
 StreamSocketCli::register($Application);
 UrlCli::register($Application);
