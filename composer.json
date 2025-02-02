@@ -42,7 +42,8 @@
     "zero-to-prod/validate-semver-cli": "^1.0",
     "zero-to-prod/url-cli": "^1.0",
     "zero-to-prod/ssl-cert-validator-cli": "^1.0",
-    "zero-to-prod/psr4-classname-cli": "^1.0"
+    "zero-to-prod/psr4-classname-cli": "^1.0",
+    "zero-to-prod/spapi-lwa-cli": "^1.0"
   },
   "autoload": {
     "psr-4": {
