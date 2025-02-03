@@ -13,14 +13,14 @@ RUN curl -sS https://getcomposer.org/installer | php -- \
     --install-dir=/usr/local/bin \
     --filename=composer
 
-RUN composer install
+FROM builder AS debug
+
+FROM builder AS composer
+
+FROM builder AS production
+
+RUN composer install --no-dev --prefer-dist --optimize-autoloader --no-interaction
 
 RUN chmod +x /app/bin/cli-tools
-
-FROM php:8.2-cli
-
-WORKDIR /app
-
-COPY --from=builder /app /app
 
 ENTRYPOINT ["php", "bin/cli-tools", "--ansi"]
