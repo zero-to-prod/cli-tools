@@ -25,3 +25,12 @@ services:
       - ./.vendor/php8.2:/app/vendor
     build:
       target: composer
+
+  production8.2:
+    extends:
+      service: php8.2
+    volumes:
+      - ./:/app:delegated
+      - ./.vendor/php8.2:/app/vendor
+    build:
+      target: production
