@@ -33,4 +33,4 @@ services:
       - ./:/app:delegated
       - ./.vendor/php8.2:/app/vendor
     build:
-      target: production
+      context: ./docker/8.2
