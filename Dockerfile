@@ -6,7 +6,7 @@ RUN apk add --no-cache \
     git \
     unzip
 
-COPY composer.json composer.lock /app/
+COPY composer.json /app/
 
 RUN curl -sS https://getcomposer.org/installer | php -- \
     --install-dir=/usr/local/bin \
