@@ -46,7 +46,6 @@ jobs:
             davidsmith3/cli-tools:${{ env.VERSION }}
           cache-from: type=registry,ref=davidsmith3/cli-tools:buildcache
           cache-to: type=registry,ref=davidsmith3/cli-tools:buildcache,mode=max
-          target: production
           build-args: |
             NODE_ENV=production
           labels: |
