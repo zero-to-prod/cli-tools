@@ -44,7 +44,7 @@ This will add the package to your project’s dependencies and create an autoloa
 Run this command to see the available commands:
 
 ```shell
-vendor/bin/cli-tools list
+vendor/bin/cli-tools list 
 ```
 
 ## Docker Image
