@@ -56,7 +56,7 @@
     "bin/cli-tools"
   ],
   "require-dev": {
-    "phpunit/phpunit": "*"
+    "phpunit/phpunit": "<12.0"
   },
   "autoload-dev": {
     "psr-4": {
