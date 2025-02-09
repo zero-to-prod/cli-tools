@@ -32,6 +32,7 @@ StreamSocketCli::register($Application);
 UrlCli::register($Application);
 ValidateEmailCli::register($Application);
 ValidateSemverCli::register($Application);
+
 ValidateUrlCli::register($Application);
 
 $Application->run();
