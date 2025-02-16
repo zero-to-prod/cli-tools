@@ -4,6 +4,7 @@
 use Symfony\Component\Console\Application;
 use Zerotoprod\CliTools\CliTools;
 use Zerotoprod\CurlHelperCli\CurlHelperCli;
+use Zerotoprod\DocblockAnnotatorCli\DocblockAnnotatorCli;
 use Zerotoprod\OmdbApiCli\OmdbApiCli;
 use Zerotoprod\Psr4ClassnameCli\Psr4ClassnameCli;
 use Zerotoprod\SpapiLwaCli\SpapiLwaCli;
@@ -22,6 +23,7 @@ $Application = (new Application());
 
 CliTools::register($Application);
 CurlHelperCli::register($Application);
+DocblockAnnotatorCli::register($Application);
 OmdbApiCli::register($Application);
 Psr4ClassnameCli::register($Application);
 SpapiLwaCli::register($Application);
@@ -32,7 +34,6 @@ StreamSocketCli::register($Application);
 UrlCli::register($Application);
 ValidateEmailCli::register($Application);
 ValidateSemverCli::register($Application);
-
 ValidateUrlCli::register($Application);
 
 $Application->run();
