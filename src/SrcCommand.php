@@ -20,6 +20,7 @@ class SrcCommand extends Command
      * @link https://github.com/zero-to-prod/cli-tools
      */
     public const signature = 'cli-tools:src';
+
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $output->writeLn('https://github.com/zero-to-prod/cli-tools');
