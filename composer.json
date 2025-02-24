@@ -47,7 +47,7 @@
     "zero-to-prod/spapi-tokens-cli": "^1.0",
     "zero-to-prod/curl-helper-cli": "^1.0",
     "zero-to-prod/spapi-orders-cli": "^1.0",
-    "zero-to-prod/docblock-annotator-cli": "^0.1.0"
+    "zero-to-prod/docblock-annotator-cli": "^4.0"
   },
   "autoload": {
     "psr-4": {
