@@ -6,6 +6,7 @@ use Symfony\Component\Console\Application;
 
 /**
  * @link https://github.com/zero-to-prod/cli-tools
+ * CLI tools
  */
 class CliTools
 {
