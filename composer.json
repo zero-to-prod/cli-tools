@@ -40,7 +40,7 @@
     "zero-to-prod/validate-url-cli": "^1.0",
     "zero-to-prod/stream-socket-cli": "^1.0",
     "zero-to-prod/validate-semver-cli": "^1.0",
-    "zero-to-prod/url-cli": "^1.0",
+    "zero-to-prod/url-cli": "^1.0 || ^2.0",
     "zero-to-prod/ssl-cert-validator-cli": "^2.0",
     "zero-to-prod/psr4-classname-cli": "^1.0",
     "zero-to-prod/spapi-lwa-cli": "^1.0",
